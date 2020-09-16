@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        body {
+            font-family: "Lato", sans-serif;
+        }
+
+        * {
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .wrapper {
+            display: flex;
+        }
+
+        .calendar {
+            margin: auto;
+            width: 465px;
+            background-color: #fff;
+            border: 1px solid black;
+
+        }
+
+        .month {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            text-align: center;
+            color: black;
+            padding: 25px 30px;
+            font-size: 20px;
+        }
+
+        .weekdays {
+            background-color: #27ae60;
+            color: #fff;
+            padding: 8px 0;
+            display: flex;
+        }
+
+        .days {
+            font-weight: 300;
+            padding: 10px 0;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .weekdays div,
+        .days div {
+            text-align: center;
+            width: 14.28%;
+        }
+
+        .days div {
+            height: 45px;
+            width: 60px;
+            padding: 10px 0;
+            margin: 0 3px 3px;
+            transition: all 0.4s;
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .prev_date {
+            color: white;
+            border: none !important;
+        }
+
+        .today {
+            /* background-color: #27ae60; */
+            border: 1px solid black;
+            color: red;
+        }
+    </style>
+</head>
+
+<body >
+    <!-- Bài 7  -->
+    <h3>Bài 7: Calendar</h3>
+    <div class="wrapper">
+        <div class="calendar">
+            <div class="month">
+
+                <div>
+                    <p id="date_str"></p>
+                </div>
+
+            </div>
+            <div class="weekdays">
+                <div>Sun</div>
+                <div>Mon</div>
+                <div>Tue</div>
+                <div>Wed</div>
+                <div>Thu</div>
+                <div>Fri</div>
+                <div>Sat</div>
+            </div>
+            <div class="days">
+               <div  id="kq"></div>
+            </div>
+            
+        </div>
+
+    </div>
+
+    <a href="../Bai1/index.html">Bai1</a>
+    <a href="../Bai2/index.html">Bai2</a>
+    <a href="../Bai3/index.html">Bai3</a>
+    <a href="../Bai4/index.html">Bai4</a>
+    <a href="../Bai5/index.html">Bai5</a>
+    <a href="../Bai6/index.html">Bai6</a>
+    <script src="../Bai7/index.js">
+        
+
+    </script>
+
+</body>
+
+</html>
